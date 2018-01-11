@@ -9,6 +9,21 @@ $(document).ready(function () {
         }
     });
 
+    var $examples = $('.js-examples__list').isotope({
+        itemSelector: '.js-examples__item',
+        layoutMode: 'fitRows'
+    })
+
+    $('.js-tab__menu__link').click(function() {
+        $('.js-tab__menu__link').removeClass('active');
+        $(this).addClass('active');
+
+        var filterValue = $(this).attr('data-filter');
+        console.log(filterValue);
+        $examples.isotope({ filter: filterValue });
+    })
+
+
     $('.js-header__hamburger-menu__container').click(function () { // hamburger 메뉴의 아이콘을 클릭했을 때
         $(this).toggleClass('change');
 
@@ -26,8 +41,4 @@ $(document).ready(function () {
         $(this).addClass('current');
         window.scrollTo(0, 0);
     })
-
-    // $('html').click(function() {
-    //     $('.js-nav--mobile').hide();
-    // })
 });

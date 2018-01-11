@@ -41,4 +41,6 @@ $(document).ready(function () {
         $(this).addClass('current');
         window.scrollTo(0, 0);
     })
+
+    $('.carousel-inner').bxSlider();
 });

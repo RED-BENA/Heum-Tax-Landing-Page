@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
     <link href='https://s3.ap-northeast-2.amazonaws.com/heum-test/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
-        crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="js/script.js"></script>
     <title>혜움 기장서비스</title>
@@ -112,33 +109,31 @@
             <h2 class="diffrent__title">기장료만 매달 내고 세무서비스도 매달 받으세요?</h2>
             <p class="diffrent__description">사업에만 전념하세요. 혜움이 사업을 제대로 챙겨드립니다.</p>
 
-            <div class="diffrent__services">
-                <dl>
-                    <dt>
-                        기존 세무서비스
-                    </dt>
+            <table class="diffrent__services">
+                <thead>
+                    <tr>
+                        <td>기존 세무서비스</td>
+                        <td class="new">혜움 세무서비스</td>
+                    </tr>
+                </thead>
 
-                    <dd>
-                        매달 돈만 내고, 제대로 알려주지도 않는, 답답한 세무서비스
-                        <br> 신경쓰지 않으면, 새는지도 모르는 세무서비스
-                        <br> 영수증 보내느라 내가 더 바쁜 세무기장
-                        <br>
-                    </dd>
-                </dl>
+                <tbody>
+                    <tr>
+                        <td>매달 돈만 내고, 제대로 알려주지도 않는, 답답한 세무서비스</td>
+                        <td>손익, 예상 부가세, 매출누락, 절세팁까지 무료 맞춤보고</td>
+                    </tr>
 
-                <dl class="new">
-                    <dt>
-                        혜움 세무서비스
-                    </dt>
+                    <tr>
+                        <td>신경쓰지 않으면, 새는지도 모르는 세무서비스</td>
+                        <td>월정산으로 부가세 환급에서 4대보험료까지 절감</td>
+                    </tr>
 
-                    <dd>
-                        손익, 예상 부가세, 매출누락, 절세팁까지 무료 맞춤보고
-                        <br> 월정산으로 부가세 환급에서 4대보험료까지 절감
-                        <br> 영수증을 보내지 않아도 알아서 챙겨주는 혜움 세무기장
-                        <br>
-                    </dd>
-                </dl>
-            </div>
+                    <tr>
+                        <td>영수증 보내느라 내가 더 바쁜 세무기장</td>
+                        <td>영수증을 보내지 않아도 알아서 챙겨주는 혜움 세무기장</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -387,39 +382,25 @@
             </h2>
 
             <div class="customers__carousel">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <p class="carousel-item__comment">
-                                “카드영수증과 전표를 모으지 않아도 되니 직원들이 너무 편해합니다. 매출/매입현황을 매주 알수있어서 더 좋았어요.”
-                            </p>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="carousel-item__comment">
+                            “카드영수증과 전표를 모으지 않아도 되니 직원들이 너무 편해합니다. 매출/매입현황을 매주 알수있어서 더 좋았어요.”
+                        </p>
 
-                            <p class="carousel-item__user">
-                                와일드바디 / 이기운 대표
-                            </p>
-                        </div>
-                        <div class="carousel-item">
-                            <p class="carousel-item__comment">
-                                “4대보험도 부담이었는데, 혜움은 다른 곳과 달리 비과세소득활용, 두루 누리, 단기 근로자 등 자기일처럼 꼼꼼히 방법을 찾아 주셨습니다.”
-                            </p>
-
-                            <p class="carousel-item__user">
-                                리호테일러 / 강재호 대표
-                            </p>
-                        </div>
+                        <p class="carousel-item__user">
+                            와일드바디 / 이기운 대표
+                        </p>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class="carousel-item">
+                        <p class="carousel-item__comment">
+                            “4대보험도 부담이었는데, 혜움은 다른 곳과 달리 비과세소득활용, 두루 누리, 단기 근로자 등 자기일처럼 꼼꼼히 방법을 찾아 주셨습니다.”
+                        </p>
+
+                        <p class="carousel-item__user">
+                            리호테일러 / 강재호 대표
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -570,6 +551,13 @@
                 세무조정비용 별도(연 1회) : 개인 30만원 부터 / 법인 50만원 부터
                 <br> 세부내용은 회사규모(매출액 또는 자산)에 따라 조정되오니, 세무사와 상담해 주시기 바랍니다.
             </p>
+        </div>
+    </div>
+
+    <div class="section start-join">
+        <div class="wrapper">
+            <h2 class="report-system__title">지금 바로 시작하세요</h2>
+            <button class="start-join__button">가입 시작하기</button>
         </div>
     </div>
 

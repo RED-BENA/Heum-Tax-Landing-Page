@@ -240,6 +240,7 @@ ul {
     .banner--main-feature__guide__title {
       color: #30363D;
       font-size: 2rem;
+      font-weight: 500;
       word-break: keep-all; }
     .banner--main-feature__guide__free-advice {
       margin-top: 50px;
@@ -258,6 +259,7 @@ ul {
       padding-top: 160px;
       color: #30363D;
       font-size: 2rem;
+      font-weight: 500;
       word-break: keep-all; }
     .banner--success-example__start-free {
       margin: 30px auto;
@@ -297,12 +299,13 @@ ul {
       padding: 0; } }
 
 .start-join {
-  padding: 120px 0;
+  padding: 60px 0;
   border-bottom: 1px solid #ddd; }
   .start-join__title {
     text-align: center;
     color: #30363D;
     font-size: 2rem;
+    font-weight: 500;
     word-break: keep-all; }
   .start-join__button {
     display: block;
@@ -313,6 +316,9 @@ ul {
     font-size: 1rem;
     background-color: #2179EF;
     border: 0; }
+  @media (min-width: 1024px) {
+    .start-join {
+      padding: 90px 0; } }
 
 .diffrent {
   border-bottom: 1px solid #ddd; }
@@ -320,6 +326,7 @@ ul {
     text-align: center;
     color: #30363D;
     font-size: 2rem;
+    font-weight: 500;
     word-break: keep-all; }
   .diffrent__description {
     text-align: center;
@@ -328,25 +335,22 @@ ul {
     font-size: 1rem;
     word-break: keep-all; }
   .diffrent__services {
+    width: 100%;
+    border-collapse: separate;
     margin-top: 100px; }
     .diffrent__services:after {
       content: "";
       display: table;
       clear: both; }
-  .diffrent__services dl {
-    width: 50%;
-    border-top: 1px solid #DDD;
-    padding: 0 10px;
-    float: left; }
-  .diffrent__services dl.new {
-    border-top: 3px solid #2179EF; }
-  .diffrent__services dl dt {
-    font-weight: 500;
+  .diffrent__services thead tr td {
     font-size: 1.125rem;
-    padding: 35px 0 35px; }
-  .diffrent__services dl.new dt {
+    border-top: 1px solid #DDD;
+    padding: 30px 0px; }
+  .diffrent__services thead tr td.new {
+    border-top: 3px solid #2179EF; }
+  .diffrent__services thead tr td.new {
     color: #2179EF; }
-  .diffrent__services dl dd {
+  .diffrent__services tbody tr td {
     color: #686C72;
     font-size: 1rem;
     word-break: keep-all; }
@@ -357,11 +361,9 @@ ul {
       font-size: 2.25rem; }
     .diffrent__description {
       font-size: 1.25rem; }
-    .diffrent__services dl {
-      padding: 0; }
-    .diffrent__services dl dt {
+    .diffrent__services thead tr td {
       font-size: 1.5rem; }
-    .diffrent__services dl dd {
+    .diffrent__services tbody tr td {
       font-size: 1.25rem; } }
 
 .arrange-accounting {
@@ -379,6 +381,7 @@ ul {
   .arrange-accounting__title {
     color: #30363D;
     font-size: 2rem;
+    font-weight: 500;
     word-break: keep-all;
     text-align: left; }
   .arrange-accounting__description {
@@ -421,6 +424,7 @@ ul {
 .confirm-kakaotalk__title {
   color: #30363D;
   font-size: 2rem;
+  font-weight: 500;
   word-break: keep-all;
   text-align: left; }
 
@@ -456,6 +460,7 @@ ul {
     text-align: center;
     color: #30363D;
     font-size: 2rem;
+    font-weight: 500;
     word-break: keep-all; }
   .leak-tax__description {
     text-align: center;
@@ -530,6 +535,7 @@ ul {
 .confirm-deduction__title {
   color: #30363D;
   font-size: 2rem;
+  font-weight: 500;
   word-break: keep-all;
   text-align: left; }
 
@@ -573,6 +579,7 @@ ul {
   .help-business__title {
     color: #30363D;
     font-size: 2rem;
+    font-weight: 500;
     word-break: keep-all;
     text-align: left; }
   .help-business__description {
@@ -646,9 +653,10 @@ ul {
     float: left;
     color: #30363D;
     font-size: 2rem;
+    font-weight: 500;
     word-break: keep-all;
     color: #fff; }
-  .customers__carousel .carousel {
+  .customers__carousel {
     width: 100%;
     background-color: white;
     float: left;
@@ -656,28 +664,51 @@ ul {
     word-break: keep-all;
     margin-top: 30px;
     padding: 70px 60px;
-    transition: height 1s; }
-    .customers__carousel .carousel .bd-example {
-      padding: 0;
-      border: 0; }
-    .customers__carousel .carousel .carousel-indicators li {
-      width: 5px;
-      height: 5px;
-      border-radius: 100%;
-      background-color: #C1C3C5; }
-    .customers__carousel .carousel .carousel-indicators li.active {
-      background-color: #2179EF; }
-    .customers__carousel .carousel .carousel-control-prev-icon {
-      background-image: url(/images/prev-arrow.png); }
-    .customers__carousel .carousel .carousel-control-next-icon {
-      background-image: url(/images/next-arrow.png); }
-    .customers__carousel .carousel .carousel-item__comment {
+    position: relative; }
+    .customers__carousel .bx-pager {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%); }
+      .customers__carousel .bx-pager:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .customers__carousel .bx-pager-item {
+        width: 5px;
+        height: 5px;
+        margin: 0 5px;
+        float: left; }
+      .customers__carousel .bx-pager-link {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: #C1C3C5;
+        border-radius: 100%;
+        text-indent: -9999px; }
+      .customers__carousel .bx-pager-link.active {
+        background-color: #2179EF; }
+    .customers__carousel .bx-controls-direction > a {
+      display: block;
+      width: 45px;
+      height: 45px;
+      text-indent: -9999px; }
+    .customers__carousel .bx-prev {
+      background-image: url(../images/prev-arrow.png);
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%); }
+    .customers__carousel .bx-next {
+      background-image: url(../images/next-arrow.png);
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%); }
+    .customers__carousel .carousel-item__comment {
       font-size: 1.25rem; }
-    .customers__carousel .carousel .carousel-item__user {
+    .customers__carousel .carousel-item__user {
       font-size: 1rem; }
-  @media (min-width: 1px) and (max-width: 320px) {
-    .customers .carousel {
-      height: 450px; } }
   @media (min-width: 1024px) {
     .customers .wrapper:after {
       content: "";
@@ -690,7 +721,7 @@ ul {
       top: 50%;
       left: 0;
       transform: translateY(-50%); }
-    .customers .carousel {
+    .customers__carousel {
       width: 50%;
       margin: 0;
       padding: 150px 90px;
@@ -705,6 +736,7 @@ ul {
     text-align: center;
     color: #30363D;
     font-size: 2rem;
+    font-weight: 500;
     word-break: keep-all; }
   .companies__list {
     margin-top: 60px; }
@@ -736,96 +768,85 @@ ul {
   .companies {
     padding: 90px 0; } }
 
-.charge__title {
-  text-align: center;
-  color: #30363D;
-  font-size: 2rem;
-  word-break: keep-all; }
-
-.charge__description {
-  text-align: center;
-  margin-top: 30px;
-  color: #686C72;
-  font-size: 1rem;
-  word-break: keep-all; }
-
-.charge__list {
-  margin-top: 80px; }
-  .charge__list:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.charge__list > div {
-  width: 100%;
-  border: 1px solid #C1C3C5;
-  margin-bottom: 30px;
-  padding: 60px 10px;
-  float: left; }
-
-.charge .charge__list--juridical {
-  margin: 0; }
-
-.charge__list__type {
-  font-size: 1rem;
-  text-align: center; }
-
-.charge__list__price {
-  font-size: 1.25rem;
-  text-align: center; }
-  .charge__list__price--blue {
-    display: inline-block;
-    margin-right: 15px;
-    color: #2179EF;
-    font-size: 3.125rem;
-    font-weight: 500; }
-
-.charge__list__benefits {
-  font-size: 1rem;
-  margin-top: 25px; }
-
-.charge__list__benefits__item {
-  margin-bottom: 20px; }
-
-.charge__list__benefits__item span {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin-right: 10px; }
-
-.charge__caution {
-  font-size: 0.875rem;
-  margin-top: 20px;
-  line-height: 1.625rem; }
-
-@media (min-width: 375px) {
+.charge {
+  border-bottom: 1px solid #ddd; }
+  .charge__title {
+    text-align: center;
+    color: #30363D;
+    font-size: 2rem;
+    font-weight: 500;
+    word-break: keep-all; }
+  .charge__description {
+    text-align: center;
+    margin-top: 30px;
+    color: #686C72;
+    font-size: 1rem;
+    word-break: keep-all; }
+  .charge__list {
+    margin-top: 80px; }
+    .charge__list:after {
+      content: "";
+      display: table;
+      clear: both; }
   .charge__list > div {
-    padding: 60px 30px; } }
-
-@media (min-width: 768px) {
-  .charge {
-    padding: 90px 20px; }
-  .charge__list > div {
-    width: 48.5%;
+    width: 100%;
     border: 1px solid #C1C3C5;
-    margin: 0;
-    margin-right: 3%;
-    padding: 60px 45px;
+    margin-bottom: 30px;
+    padding: 60px 10px;
     float: left; }
+  .charge .charge__list--juridical {
+    margin: 0; }
+  .charge__list__type {
+    font-size: 1rem;
+    text-align: center; }
+  .charge__list__price {
+    font-size: 1.25rem;
+    text-align: center; }
+    .charge__list__price--blue {
+      display: inline-block;
+      margin-right: 15px;
+      color: #2179EF;
+      font-size: 3.125rem;
+      font-weight: 500; }
   .charge__list__benefits {
     font-size: 1rem;
-    margin-top: 85px; } }
-
-@media (min-width: 1024px) {
-  .charge__list > div {
-    padding: 60px 80px; }
+    margin-top: 25px; }
+  .charge__list__benefits__item {
+    margin-bottom: 20px; }
+  .charge__list__benefits__item span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px; }
   .charge__caution {
-    margin-top: 40px; } }
-
-@media (min-width: 1440px) {
-  .charge {
-    padding-left: 0;
-    padding-right: 0; } }
+    font-size: 0.875rem;
+    margin-top: 20px;
+    line-height: 1.625rem; }
+  @media (min-width: 375px) {
+    .charge__list > div {
+      padding: 60px 30px; } }
+  @media (min-width: 768px) {
+    .charge {
+      padding: 90px 20px; }
+    .charge__list > div {
+      width: 48.5%;
+      border: 1px solid #C1C3C5;
+      margin: 0;
+      margin-right: 3%;
+      padding: 60px 45px;
+      float: left; }
+    .charge__list__benefits {
+      font-size: 1rem;
+      margin-top: 85px; } }
+  @media (min-width: 1024px) {
+    .charge__list > div {
+      padding: 60px 80px; }
+    .charge__caution {
+      margin-top: 40px; } }
+  @media (min-width: 1440px) {
+    .charge {
+      padding-left: 0;
+      padding-right: 0; } }
 
 .kakaotalk-notice {
   padding: 120px 0;
@@ -834,6 +855,7 @@ ul {
     text-align: center;
     color: #30363D;
     font-size: 2rem;
+    font-weight: 500;
     word-break: keep-all; }
   .kakaotalk-notice__description {
     text-align: center;
@@ -883,6 +905,7 @@ ul {
     text-align: center;
     color: #30363D;
     font-size: 2rem;
+    font-weight: 500;
     word-break: keep-all; }
   .report-system__description {
     text-align: center;
@@ -932,6 +955,7 @@ ul {
     text-align: center;
     color: #30363D;
     font-size: 2rem;
+    font-weight: 500;
     word-break: keep-all; }
   .payroll-system__description {
     text-align: center;
@@ -981,6 +1005,7 @@ ul {
     text-align: center;
     color: #30363D;
     font-size: 2rem;
+    font-weight: 500;
     word-break: keep-all; }
   .tax-affairs-manage__description {
     text-align: center;
@@ -1030,6 +1055,7 @@ ul {
     text-align: center;
     color: #30363D;
     font-size: 2rem;
+    font-weight: 500;
     word-break: keep-all; }
   .service-charge__list {
     margin-top: 80px; }
@@ -1083,6 +1109,7 @@ ul {
   .additional-benefit__guide__title {
     color: #30363D;
     font-size: 2rem;
+    font-weight: 500;
     word-break: keep-all; }
   .additional-benefit__guide__description {
     margin-top: 30px;
@@ -1104,6 +1131,7 @@ ul {
   .introduce-facebook__title {
     color: #30363D;
     font-size: 2rem;
+    font-weight: 500;
     word-break: keep-all;
     color: #fff; }
   .introduce-facebook__description {
@@ -1121,6 +1149,7 @@ ul {
     text-align: center;
     color: #30363D;
     font-size: 2rem;
+    font-weight: 500;
     word-break: keep-all; }
   .adventage__list {
     margin-top: 80px; }
@@ -1181,6 +1210,7 @@ ul {
 .examples__title {
   color: #30363D;
   font-size: 2rem;
+  font-weight: 500;
   word-break: keep-all;
   font-size: 2rem;
   font-weight: 600; }

@@ -40,7 +40,12 @@ $(document).ready(function () {
         $('.js-header__hamburger-menu__container ul li').removeClass('current');
         $(this).addClass('current');
         window.scrollTo(0, 0);
-    })
+    });
 
-    $('.carousel-inner').bxSlider();
+    var slider_array = new Array();
+    
+    $('.carousel-inner').each(function(i) {
+        // console.log(i);
+        slider_array[i] = $(this).bxSlider();
+    });
 });

@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     var $examples = $('.js-examples__list').isotope({
         itemSelector: '.js-examples__item',
-        layoutMode: 'fitRows'
+        layoutMode: 'masonry'
     })
 
     $('.js-tab__menu__link').click(function() {

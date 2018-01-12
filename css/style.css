@@ -64,10 +64,10 @@ ul {
       height: 380px;
       position: static; }
       .main-feature__carousel .bx-pager {
-        bottom: 80px; } }
+        bottom: 80px !important; } }
   @media (min-width: 1024px) {
     .main-feature__carousel .bx-pager {
-      bottom: 115px; } }
+      bottom: 115px !important; } }
   .main-feature__carousel .bx-pager {
     bottom: 25px;
     position: absolute;

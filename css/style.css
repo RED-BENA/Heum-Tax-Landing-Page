@@ -25,20 +25,11 @@ a {
   text-decoration: none;
   color: #30363D; }
 
+p, ol, dl, ul {
+  margin: 0; }
+
 a:hover {
   text-decoration: none; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-dl,
-ol,
-ul {
-  margin: 0; }
 
 .wrapper {
   max-width: 1200px;
@@ -429,7 +420,6 @@ ul {
       padding: 0; } }
 
 .start-join {
-  padding: 60px 0;
   border-bottom: 1px solid #ddd; }
   .start-join__title {
     text-align: center;
@@ -996,8 +986,7 @@ ul {
       padding: 120px 0; } }
 
 .service-charge {
-  margin-top: 80px;
-  padding: 90px 0 160px; }
+  margin-top: 80px; }
   .service-charge__title {
     text-align: center;
     color: #30363D;
@@ -1005,18 +994,18 @@ ul {
     font-weight: 500;
     word-break: keep-all; }
   .service-charge__list {
-    margin-top: 80px; }
+    margin-top: 60px; }
     .service-charge__list:after {
       content: "";
       display: table;
       clear: both; }
     .service-charge__list--blue {
-      margin-right: 15px;
       color: #2179EF;
       font-size: 3.125rem;
       font-weight: 500; }
     .service-charge__list__free-month {
       padding: 20px 30px;
+      margin: 0 auto 20px;
       display: block;
       color: #fff;
       font-size: 1rem;
@@ -1025,55 +1014,82 @@ ul {
   .service-charge__list dl {
     text-align: center;
     border: 1px solid #C1C3C5;
-    width: 22.75%;
-    margin-right: 36px;
-    padding: 45px 30px 60px;
+    width: 100%;
+    margin-bottom: 20px;
     float: left; }
-    .service-charge__list dl:last-child {
-      margin: 0; }
   .service-charge__list dl dd {
     margin-top: 15px;
     font-size: 1.125rem; }
     .service-charge__list dl dd p {
-      height: 115px; }
+      height: 80px; }
   .service-charge__feature {
-    font-size: 0.875rem;
-    margin-top: 30px; }
+    font-size: 0.875rem; }
+  @media (min-width: 768px) {
+    .service-charge__list dl {
+      width: 48.5%;
+      margin-right: 3%;
+      float: left; }
+      .service-charge__list dl:nth-child(even) {
+        margin: 0; } }
+  @media (min-width: 1440px) {
+    .service-charge {
+      padding: 90px 0; }
+      .service-charge__list {
+        margin-top: 80px; }
+      .service-charge__list dl {
+        text-align: center;
+        width: 22.75%;
+        padding: 45px 30px 60px; }
+        .service-charge__list dl:nth-child(2) {
+          margin-right: 3%; }
+        .service-charge__list dl:last-child {
+          margin: 0; } }
 
 .additional-benefit {
   background-image: url(/images/benefit-banner.png);
   background-size: cover;
-  padding: 70px 0; }
+  text-align: center; }
   .additional-benefit:after {
     content: "";
     display: table;
     clear: both; }
   .additional-benefit__guide {
-    width: 48.5%;
+    width: 100%;
     background-color: #fff;
-    padding: 75px;
-    float: right; }
+    padding: 30px; }
   .additional-benefit__guide__title {
     color: #30363D;
     font-size: 2rem;
     font-weight: 500;
     word-break: keep-all; }
   .additional-benefit__guide__description {
-    margin-top: 30px;
+    margin: 20px 0;
     color: #686C72;
     font-size: 1rem;
     word-break: keep-all; }
   .additional-benefit__guide__button {
     margin-top: 30px;
+    margin: 0 auto;
     padding: 20px 40px;
     display: block;
     color: #2179EF;
     background-color: #fff;
     border: 1px solid #2179EF; }
+  @media (min-width: 768px) {
+    .additional-benefit__guide {
+      width: 48.5%;
+      text-align: left;
+      background-color: #fff;
+      padding: 50px;
+      float: right; }
+    .additional-benefit__guide__button {
+      margin: 0; } }
+  @media (min-width: 1024px) {
+    .additional-benefit__guide {
+      padding: 75px; } }
 
 .introduce-facebook {
   background-color: #2179EF;
-  padding: 75px 0;
   text-align: center; }
   .introduce-facebook__title {
     color: #30363D;
@@ -1091,7 +1107,7 @@ ul {
 
 .adventage {
   border-bottom: 1px solid #ddd;
-  padding: 90px 0 120px; }
+  padding-bottom: 30px; }
   .adventage__title {
     text-align: center;
     color: #30363D;
@@ -1099,16 +1115,20 @@ ul {
     font-weight: 500;
     word-break: keep-all; }
   .adventage__list {
-    margin-top: 80px; }
+    margin-top: 40px; }
     .adventage__list li {
-      margin-top: 40px;
       padding: 30px 0;
       border-top: 1px solid #ddd; }
     .adventage__list__title {
       font-size: 1.25rem; }
     .adventage__list__description {
-      font-size: 1.125rem;
+      font-size: 1rem;
       margin-top: 20px; }
+  @media (min-width: 1024px) {
+    .adventage__list {
+      margin-top: 80px; }
+      .adventage__list li {
+        margin-top: 20px; } }
 
 .tab {
   text-align: center; }

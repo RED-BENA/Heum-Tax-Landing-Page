@@ -261,7 +261,7 @@ a:hover {
   .banner--index {
     height: 600px;
     color: #fff;
-    background-image: url(../images/banner.png);
+    background-image: url(../images/banner.jpg);
     background-size: cover;
     background-position: center center; }
     .banner--index__information {
@@ -374,12 +374,12 @@ a:hover {
           background-color: #fff;
           border: 1px solid #2179EF; } }
   .banner--success-example {
-    background-image: url(../images/banner-temp.jpg);
+    background-image: url(../images/success-example_banner@2x.png);
     background-size: cover;
     background-position: left center;
     padding-top: 150px; }
     .banner--success-example__title {
-      color: #30363D;
+      color: #fff;
       font-size: 2rem;
       font-weight: 500;
       word-break: keep-all;
@@ -1105,7 +1105,7 @@ a:hover {
           margin: 0; } }
 
 .additional-benefit {
-  background-image: url(../images/benefit-banner.png);
+  background-image: url(../images/charge-guide_benefit.png);
   background-size: cover;
   text-align: center; }
   .additional-benefit:after {
